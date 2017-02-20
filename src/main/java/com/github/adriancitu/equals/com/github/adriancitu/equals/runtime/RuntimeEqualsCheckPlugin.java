@@ -26,9 +26,7 @@ package com.github.adriancitu.equals.com.github.adriancitu.equals.runtime;
 
 import com.sun.source.util.JavacTask;
 import com.sun.source.util.Plugin;
-/**
- * Created by ady on 03.02.17.
- */
+
 public class RuntimeEqualsCheckPlugin implements Plugin {
 
     public String getName() {
