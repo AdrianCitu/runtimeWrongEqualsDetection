@@ -31,14 +31,14 @@ import com.sun.tools.javac.tree.JCTree;
 import javax.lang.model.element.Name;
 import javax.lang.model.type.PrimitiveType;
 import javax.lang.model.type.TypeKind;
-import javax.lang.model.type.TypeMirror;
 import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
 import java.util.List;
 
 
 /**
- * Created by ady on 03.02.17.
+ * Tree visitor that will override the method execution; this implementation
+ * is using heavily the cast of internal classes not the interfaces.
  */
 public class CodePatternTreeVisitor extends TreePathScanner<Void, Void> {
 

@@ -38,7 +38,9 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Created by ady on 09.02.17.
+ * Tree visitor that override the method invocation in order to check
+ * that the invocated method is java.lang.Object.equals() and
+ * the caller and the callee have the same type.
  */
 public class CodePatternTreeVisitor2 extends TreePathScanner<Void, Void> {
 
