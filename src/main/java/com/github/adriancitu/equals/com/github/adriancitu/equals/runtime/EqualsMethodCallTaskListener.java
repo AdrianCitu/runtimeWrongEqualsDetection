@@ -29,9 +29,6 @@ import com.sun.source.util.JavacTask;
 import com.sun.source.util.TaskEvent;
 import com.sun.source.util.TaskListener;
 
-/**
- * Created by ady on 03.02.17.
- */
 public class EqualsMethodCallTaskListener implements TaskListener{
 
     private final CodePatternTreeVisitor2 visitor;
