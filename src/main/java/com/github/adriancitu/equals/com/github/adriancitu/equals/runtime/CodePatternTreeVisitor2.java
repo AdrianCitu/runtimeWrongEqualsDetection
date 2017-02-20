@@ -121,6 +121,10 @@ public class CodePatternTreeVisitor2 extends TreePathScanner<Void, Void> {
         return super.visitMethodInvocation(methodInvocationTree, aVoid);
     }
 
+    /*
+     * The safest way to check if the call is a equals call was to cast the TreePath
+     * interface to the real implementation; not very proud of me.
+     */
     private boolean isEqualsCall(TreePath path, int methodParametersSize) {
 
         if (methodParametersSize != 1) {
